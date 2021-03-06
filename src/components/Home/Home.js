@@ -1,9 +1,13 @@
 import React from 'react';
+import Categories from '../Categories/Categories';
 
-const Home = () => {
+const Home = (props) => {
+    const {count} = props;
     return (
-        <div>
-            <h3>This is Home Componenet</h3>
+        <div style={{border: '1px solid purple',
+        }}>
+            <h3>This is Home: {count}</h3>
+            <Categories/>
         </div>
     );
 };
